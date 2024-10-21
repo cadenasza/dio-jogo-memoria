@@ -50,8 +50,8 @@ h2 {
     background-color: #000;
 }
 .game {
-    width:27rem ;
-    height:27rem ;
+    max-width:27rem ;
+    max-height:27rem ;
     display: flex;
     flex-wrap:wrap ;
     gap: 10px;
@@ -90,4 +90,56 @@ h2 {
 .boxMatch::after{
     transform: rotate(180deg);
     background-color: transparent;
+}
+
+@media screen and (max-width:600px) {
+    .item{
+        width: 4rem ;
+        height: 4rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .game{
+        max-width: 20rem;
+        max-height: 20rem;
+    }
+    .container{
+        max-width: 100%;
+    }
+}
+@media screen and (max-width:450px) {
+    .item{
+        width: 3rem ;
+        height: 3rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    .game{
+        max-width: 15rem;
+        max-height: 15rem;
+    }
+    .container{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .item{
+        width: 2.3rem ;
+        height: 2.3rem;
+        font-size: 1.5rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    .game{
+        max-width: 13rem;
+        max-height: 13rem;
+    }
+    .container{
+        max-width: 100%;
+    }
+
 }
